@@ -54,6 +54,9 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="416,365.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -64,7 +67,9 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Populates the &quot;Job Title - Software Engineer&quot; and &quot;Location - United States&quot; fields and pop's the &quot;find jobs&quot; button, a fresh Job list is presented, the robot then scrapes the &quot;Job List&quot;.&#xA;&#xA;Pre - con: Signed in the &quot;Indeed Jobs&quot; home.&#xA;&#xA;Post - act: Job list scraped and being prepared." DisplayName="Invoke Search for Jobs workflow" sap:VirtualizedContainerService.HintSize="353.6,253.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Data Scraping and Application\Scrape Job Listing.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_URL_IndeedJobs">https://za.indeed.com/</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_URL_IndeedJobs">
+          <Literal x:TypeArguments="x:String">https://www.indeed.com/</Literal>
+        </InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
