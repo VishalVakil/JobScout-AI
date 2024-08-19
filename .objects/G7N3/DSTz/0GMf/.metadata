@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Job Search  Indeed",
+  "Type": "Screen",
+  "Id": "0GMfA9xkZEe8Kz3OFbaffw",
+  "Reference": "kvDSaJ3VCU6GQN7aLHGt8Q/0GMfA9xkZEe8Kz3OFbaffw",
+  "ParentRef": "kvDSaJ3VCU6GQN7aLHGt8Q/DSTz6fU15UGm_3cxfxB65A",
+  "Created": "2024-08-19T03:57:44.7667072Z",
+  "Updated": "2024-08-19T03:57:44.7667072Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

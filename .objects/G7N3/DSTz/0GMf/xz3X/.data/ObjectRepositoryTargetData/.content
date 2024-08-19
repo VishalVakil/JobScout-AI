@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Y_t5z5Svh0iLBWASUHKmTA" Reference="kvDSaJ3VCU6GQN7aLHGt8Q/xz3XkDbwdkSp-HlfyZ4pbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.indeed.com/jobs?q=Software+Engineer&amp;l=United+States&amp;radius=50&amp;fromage=1&amp;vjk=1dc65cf2981f065f&amp;advn=7494582439330530" DesignTimeRectangle="239, 412, 587, 6527" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl parentid='mosaic-provider-jobcards' tag='UL' /&gt;" Guid="ad2f1624-dcb6-419c-a7d3-dfda8b82f970" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flexible Software Engineer Jobs in United States | Indeed.com' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="705259536b5cdf8b5c4016797366f03d.png" xmlns="">068Z0GG1CgU2fkDF7_n5gJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='POSITION DETAILS'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='URL'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Postion Name'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;true&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataNextLink' /&gt;
+&lt;/Table&gt;</p:InArgument>
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="https://www.indeed.com/jobs?q=Software+Engineer&amp;l=United+States&amp;radius=50&amp;fromage=1&amp;vjk=1dc65cf2981f065f&amp;advn=7494582439330530" DesignTimeRectangle="688, 546, 55, 55" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-label='Next Page' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next Page' tag='A' type='' class='css-akkh0a e8ju0x50' aaname='' /&gt;" Guid="02af819f-7ff8-45b6-ae95-e77bafbd025f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flexible Software Engineer Jobs in United States | Indeed.com' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

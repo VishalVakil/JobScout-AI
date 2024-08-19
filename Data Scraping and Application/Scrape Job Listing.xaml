@@ -1,0 +1,233 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Search_for_Jobs" this:Search_for_Jobs.in_URL_IndeedJobs="https://www.indeed.com/" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_URL_IndeedJobs" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>900,2384</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Search_for_Jobs_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Populates the&quot;where&quot; and &quot;what&quot; fields and pop's the &quot;find jobs&quot; button, a fresh Job list is presented, the robot then scrapes the &quot;Job List&quot;.&#xA;&#xA;Pre - con: Signed into &quot;indeed.com&quot; homepage and populates the &quot;where&quot; and &quot;what&quot; fields.&#xA;&#xA;Post - act: Signed in and job list has been scraped." DisplayName="Scrape Job Listing" sap:VirtualizedContainerService.HintSize="910.4,2319.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_IndeedJobList" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_FilteredIndeedJobList" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Job Search  Indeed" sap:VirtualizedContainerService.HintSize="848,1936" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b5cdce70-4dda-482d-97cc-57d38e716b01" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="814.4,1719.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'INPUT text-input-what'" sap:VirtualizedContainerService.HintSize="752,1292" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b5cdce70-4dda-482d-97cc-57d38e716b01" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,1073.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT text-input-what'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,255.2" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b5cdce70-4dda-482d-97cc-57d38e716b01" Text="Software Engineer" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.indeed.com/" CVScreenId="9afce671-99c0-4e0e-8bd0-c78d848a26a8" CvElementArea="434, 414, 456, 76" CvType="InputBox" DesignTimeRectangle="497, 413, 351, 75" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='text-input-what' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='text-input-what' tag='INPUT' type='text' class='css-p1lp5i e1jgz0i3' placeholder='Job title, keywords, or company' aaname='' /&gt;" Guid="c241b896-d71d-4bdd-9795-47707e954ecc" InformativeScreenshot="a873fe643e7df372c54aa6ad0a29a319.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Job Search | Indeed' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '&amp;nbsp;'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,255.2" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b5cdce70-4dda-482d-97cc-57d38e716b01" Text="United States" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.indeed.com/" CVScreenId="29ccdf8b-2968-486d-8ad9-c522ad4fbb79" CvTextArea="955, 442, 294, 22" CvTextArgument="City, state, zip code, or &quot;remote&quot;" CvType="Text" DesignTimeRectangle="952, 413, 351, 75" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='text-input-where' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='text-input-where' tag='INPUT' type='text' class='css-p1lp5i e1jgz0i3' placeholder='City, state, zip code, or &amp;quot;remote&amp;quot;' aaname='' /&gt;" Guid="a872d35d-99b4-4972-baa6-02f7f1b4898b" InformativeScreenshot="fcaa64eee9d8b478dd6f9516a2aff813.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Job Search | Indeed' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="889, 450, 64, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='&amp;amp;nbsp;' parentid='jobsearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='&amp;amp;nbsp;' parentid='jobsearch' tag='SPAN' type='' class='' check:innerText='&amp;amp;nbsp;' /&gt;" Guid="7a940084-6521-4960-a073-56dc20a4e5fd" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="387.2,194.4" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b5cdce70-4dda-482d-97cc-57d38e716b01" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.indeed.com/" CVScreenId="29ccdf8b-2968-486d-8ad9-c522ad4fbb79" CvElementArea="1350, 420, 123, 61" CvTextArea="1380, 441, 61, 17" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1353, 423, 117, 55" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='yosegi-InlineWhatWhere-primaryButton' aaname='Search' check:innerText='Search' /&gt;" Guid="d213f6d3-da06-4c0d-ac6e-957306e2a916" InformativeScreenshot="ddaff49221626ea8d579ff3230b16e55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Job Search | Indeed' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NSelectItem DisplayName="Select Item 'Date posted'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Last 24 hours" ScopeIdentifier="b5cdce70-4dda-482d-97cc-57d38e716b01" Version="V3">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Last 24 hours</x:String>
+                        <x:String>Last 3 days</x:String>
+                        <x:String>Last 7 days</x:String>
+                        <x:String>Last 14 days</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.indeed.com/jobs?q=software+engineer&amp;l=United+States&amp;from=searchOnHP&amp;vjk=0c61457342931431" CVScreenId="e831134a-ef6b-4e6a-8583-baaa7b56ce23" CvTextArea="340, 534, 84, 17" CvTextArgument="Date posted" CvType="Text" DesignTimeRectangle="319, 514, 152, 51" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='filter-dateposted' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='filter-dateposted' tag='BUTTON' type='' class='yosegi-FilterPill-pill' aaname='Date posted' check:innerText='Date posted' /&gt;" Guid="febf528f-b379-4aff-902f-184ac8ee3e3b" InformativeScreenshot="b01eb81d6911fee19749ef21179f8322.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flexible Software Engineer Jobs in United States | Indeed.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="e831134a-ef6b-4e6a-8583-baaa7b56ce23" CvElementArea="313, 509, 162, 62" CvTextArea="340, 534, 84, 17" CvTextArgument="Date posted" CvType="Button" DesignTimeRectangle="341, 530, 85, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='filter-dateposted' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='filter-dateposted' tag='DIV' type='' class='yosegi-FilterPill-pillLabel' aaname='Date posted' check:innerText='Date posted' /&gt;" Guid="d8439bf1-039d-4bfe-b972-366f02a8174d" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NSelectItem.Target>
+                  </uix:NSelectItem>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.indeed.com/" CVScreenId="9afce671-99c0-4e0e-8bd0-c78d848a26a8" CvElementArea="434, 414, 456, 76" CvType="InputBox" DesignTimeRectangle="497, 413, 351, 75" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='text-input-what' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='text-input-what' tag='INPUT' type='text' class='css-p1lp5i e1jgz0i3' placeholder='Job title, keywords, or company' aaname='' /&gt;" Guid="50288ac6-4715-48b5-8731-97369b7363c3" InformativeScreenshot="6c1d08d2822ded8d74b699cb966e3283.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Job Search | Indeed' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DT_IndeedJobList]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='POSITION DETAILS'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='URL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Postion Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='href' name2='Column2' attr2='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="752,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="b5cdce70-4dda-482d-97cc-57d38e716b01" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.indeed.com/jobs?q=Software+Engineer&amp;l=United+States&amp;radius=50&amp;fromage=1&amp;vjk=1dc65cf2981f065f&amp;advn=7494582439330530" DesignTimeRectangle="688, 546, 55, 55" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-label='Next Page' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next Page' tag='A' type='' class='css-akkh0a e8ju0x50' aaname='' /&gt;" Guid="02af819f-7ff8-45b6-ae95-e77bafbd025f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flexible Software Engineer Jobs in United States | Indeed.com' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.indeed.com/jobs?q=Software+Engineer&amp;l=United+States&amp;radius=50&amp;fromage=1&amp;vjk=1dc65cf2981f065f&amp;advn=7494582439330530" ContentHash="Y_t5z5Svh0iLBWASUHKmTA" DesignTimeRectangle="239, 412, 587, 6527" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl parentid='mosaic-provider-jobcards' tag='UL' /&gt;" Guid="ad2f1624-dcb6-419c-a7d3-dfda8b82f970" InformativeScreenshot="705259536b5cdf8b5c4016797366f03d.png" Reference="kvDSaJ3VCU6GQN7aLHGt8Q/xz3XkDbwdkSp-HlfyZ4pbQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flexible Software Engineer Jobs in United States | Indeed.com' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="752,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;Successfully extracted,&quot;+DT_IndeedJobList.Rows.Count.ToString+&quot; job listings from Indeed Jobs webpage.&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="TZbHoUN9x0OObdsf0QHWiw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJHSURBVFhHxZe/TsMwEIf7CH2EPkJnJiZWEOy0OwNssFEJ9nYHVJgQA7DAwkJZYIIOTHQpU1mQIpUFJnOf60BobCdOIvFJpySO7fv5/CeXWl6UUnWxtlhfbCgWicVwTxnvWmJ106w80llDrCeWdJgHxDRMN+FIY0bcpaeSdE2X+ZFGjHqsm1cDfeWLhlRsmgZebp8marN3r1a2b9TixpW+Hl+/qOjj09RIQZ9N48aOVMgcOY5xWFs40Nf23uBHSGP1VDXWTtXl3aupncIdCXnBnHudd44eVX3pRO3KNZraR4pAhHB1gI/0LpFC74Lb6j2o5vq5Gk+mpsTPcPRu7qz8XZhSQOidMHKcz48aMZ6RZvE7FfJwPCtLM36b6pAmnbPQ4nWAMe/UC6QXO2funejO58Le2h/8OI8NQYFwsNURwPFqhfDuHj6ap1+arYuUAKwAbW/4O+LctuiWd25SzpmmAvQRwEfECvvbBpGZF9A9ezZvgxgiwPqRYRv5VjiRQSAHUYmdECHASsY+rgynANdJF4NArH890jugaBScU5BF8hzACgrQU+BchD4qEqAXoXMb+qhIgN6GzoPIR0UCWgjgKA5eBxUJmH2W5YakM4gKBPS1c5AH7+fYRgUC/mZGUhAUhZICZp/iJFKYmZIlKSHAnpKBvMidjpOixc7JE6OPL/PGC33703OpkCstxyGJCdlwztHTpz8tj5GK//djEiMNWBPB29MCfRT/WZXGRCP0uOZgw3HYqH1IZ0SEYxsxvt9z6uQcca32Da/kWDrF0cmbAAAAAElFTkSuQmCC" InformativeScreenshot="237f01e694ebf43202c598109b90cb41.jpg" Reference="kvDSaJ3VCU6GQN7aLHGt8Q/0GMfA9xkZEe8Kz3OFbaffw" Selector="&lt;html app='chrome.exe' title='Job Search | Indeed' /&gt;" Title="Job Search | Indeed" Url="https://www.indeed.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:WriteRange AddHeaders="True" sap2010:Annotation.AnnotationText="A full Job list from Indeed.com" DataTable="[DT_IndeedJobList]" DisplayName="Write Range - Jobs List" sap:VirtualizedContainerService.HintSize="848,147.2" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Job Listings" WorkbookPath="Indeed Job listings.xlsx">
+      <ui:WriteRange.StartingCell>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:WriteRange.StartingCell>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteRange>
+  </Sequence>
+</Activity>

@@ -1,0 +1,98 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Request User Sign in Details/Request User for SignIn Details.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_Password",
+        "out_UserEmail"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Open Browser/Open Browser.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_URL"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sign In Indeed Jobs/Sign in to Indeed Jobs webpage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bool_SignPage&Sequence_18",
+        "bool_SignInButton&Sequence_14"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Password",
+        "in_UserEmail"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sends Job List to Email.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_JobList&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_JobTitleName",
+        "in_CompanyName"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Data Scraping and Application/Scrape Job Listing.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_IndeedJobList&Sequence_37",
+        "DT_FilteredIndeedJobList&Sequence_37"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_URL_IndeedJobs"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Data Scraping and Application/Apply to Job.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bool_OnlineResume&Sequence_1",
+        "bool_ApplyButton&Sequence_1",
+        "Txt_JobTitle&Sequence_1",
+        "Txt_companyName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_URL_IndeedJobs",
+        "in_ApplicationURL",
+        "out_JobTitleName"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

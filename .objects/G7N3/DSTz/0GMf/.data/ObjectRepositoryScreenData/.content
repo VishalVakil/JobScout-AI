@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="TZbHoUN9x0OObdsf0QHWiw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJHSURBVFhHxZe/TsMwEIf7CH2EPkJnJiZWEOy0OwNssFEJ9nYHVJgQA7DAwkJZYIIOTHQpU1mQIpUFJnOf60BobCdOIvFJpySO7fv5/CeXWl6UUnWxtlhfbCgWicVwTxnvWmJ106w80llDrCeWdJgHxDRMN+FIY0bcpaeSdE2X+ZFGjHqsm1cDfeWLhlRsmgZebp8marN3r1a2b9TixpW+Hl+/qOjj09RIQZ9N48aOVMgcOY5xWFs40Nf23uBHSGP1VDXWTtXl3aupncIdCXnBnHudd44eVX3pRO3KNZraR4pAhHB1gI/0LpFC74Lb6j2o5vq5Gk+mpsTPcPRu7qz8XZhSQOidMHKcz48aMZ6RZvE7FfJwPCtLM36b6pAmnbPQ4nWAMe/UC6QXO2funejO58Le2h/8OI8NQYFwsNURwPFqhfDuHj6ap1+arYuUAKwAbW/4O+LctuiWd25SzpmmAvQRwEfECvvbBpGZF9A9ezZvgxgiwPqRYRv5VjiRQSAHUYmdECHASsY+rgynANdJF4NArH890jugaBScU5BF8hzACgrQU+BchD4qEqAXoXMb+qhIgN6GzoPIR0UCWgjgKA5eBxUJmH2W5YakM4gKBPS1c5AH7+fYRgUC/mZGUhAUhZICZp/iJFKYmZIlKSHAnpKBvMidjpOixc7JE6OPL/PGC33703OpkCstxyGJCdlwztHTpz8tj5GK//djEiMNWBPB29MCfRT/WZXGRCP0uOZgw3HYqH1IZ0SEYxsxvt9z6uQcca32Da/kWDrF0cmbAAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' title='Job Search | Indeed' /&gt;" Title="Job Search | Indeed" Url="https://www.indeed.com/">
+      <imageRef attrName="InformativeScreenshot" originalValue="237f01e694ebf43202c598109b90cb41.jpg" xmlns="">0kdn3S7NZbEWFbno086bbDg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
