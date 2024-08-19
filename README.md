@@ -1,6 +1,6 @@
 # JobScout AI
 
-**JobScout AI** is an intelligent assistant designed to simplify your job search by quickly providing a list of the latest job openings from Indeed, helping you stay up-to-date with minimal effort.
+**JobScout AI** is an intelligent assistant designed to simplify your job search by quickly providing a list of the latest job openings (Last 24 hours) from Indeed, helping you stay up-to-date with minimal effort.
 
 ## Features
 
